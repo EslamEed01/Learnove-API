@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Learnova.API</name>
+    </assembly>
+    <members>
+        <member name="M:Learnova.API.Controllers.AccountController.Info">
+            <summary>
+            Get current user profile 
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AccountController.Info(Learnova.Business.DTOs.Contract.Users.UpdateProfileRequest)">
+            <summary>
+            info
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AccountController.ChangePassword(Learnova.Business.DTOs.Contract.Users.ChangePasswordRequest)">
+            <summary>
+            change password
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AIController.AskQuestion(Learnova.Business.DTOs.AiDTO.AIQueryRequest)">
+            <summary>
+            ask a question about the uploaded PDF documents
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AIController.SummarizePdf(Learnova.Business.DTOs.AiDTO.PdfSummaryRequest)">
+            <summary>
+            Generate a summary of a PDF document
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AIController.SearchSimilar(Learnova.API.Controllers.AIController.SearchRequest)">
+            <summary>
+            Search for similar content chunks using vector similarity
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AIController.GetPdfChunks(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            Get chunks from a specific PDF (for debugging/testing)
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.LoginAsync(Learnova.Business.DTOs.Contract.Authentication.LoginRequest,System.Threading.CancellationToken)">
+            <summary>
+            Authenticate user and return JWT token  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.RefreshAsync(Learnova.Business.DTOs.Contract.Authentication.RefreshTokenRequest,System.Threading.CancellationToken)">
+            <summary>
+            Refresh JWT token using refresh token  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.RevokeRefreshToken(Learnova.Business.DTOs.Contract.Authentication.RefreshTokenRequest,System.Threading.CancellationToken)">
+            <summary>
+            Revoke refresh token  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.Register(Learnova.Business.DTOs.Contract.Authentication.RegisterRequest,System.Threading.CancellationToken)">
+            <summary>
+            Register a new user  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.ConfirmEmail(Learnova.Business.DTOs.Contract.ConfirmEmailRequest,System.Threading.CancellationToken)">
+            <summary>
+            Confirm email address   
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.ResendConfirmationEmail(Learnova.Business.DTOs.Contract.Authentication.ResendConfirmationEmailRequest,System.Threading.CancellationToken)">
+            <summary>
+            Resend confirmation email  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.ForgetPassword(Learnova.Business.DTOs.Contract.Authentication.ForgetPasswordRequest)">
+            <summary>
+            Send forget password code to email  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.AuthController.ResetPassword(Learnova.Business.DTOs.Contract.Authentication.ResetPasswordRequest)">
+            <summary>
+            Reset password using code sent to email  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CategoriesController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            get all categories with pagination  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CategoriesController.Get(System.Int32)">
+            <summary>
+            get a specific category by id  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CategoriesController.Create(Learnova.Business.DTOs.CateDTO.CategoryDTO)">
+            <summary>
+            create a new category  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CategoriesController.Update(System.Int32,Learnova.Business.DTOs.CateDTO.CategoryDTO)">
+            <summary>
+            update a specific category by id  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CategoriesController.Delete(System.Int32)">
+            <summary>
+            delete a specific category by id  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ContentController.#ctor(Learnova.Business.Services.Interfaces.IPdfUploadService,Learnova.Business.Services.Interfaces.IVideoUploadService)">
+            <summary>
+            Initializes a new instance of the ContentController.
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ContentController.UploadPdf(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload a PDF file for a specific course.  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ContentController.UploadVideo(System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Upload a video file for a specific lesson.  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            get all courses with pagination  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.Get(System.Int32)">
+            <summary>
+            get a specific course by id  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.Create(Learnova.Business.DTOs.CourseDTO.CourseDTO)">
+            <summary>
+            create a new course  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.Update(System.Int32,Learnova.Business.DTOs.CourseDTO.CourseDTO)">
+            <summary>
+            update an existing course  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.Delete(System.Int32)">
+            <summary>
+            delete a course  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.GetCourseMembers(System.Int32)">
+            <summary>
+            get all members of a course  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.AddCourseMember(System.Int32,Learnova.Business.DTOs.EnrollmentDTO.Learnova.Business.DTOs.EnrollmentDTO.CreateEnrollmentDTO)">
+            <summary>
+            add a member to a course  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.CoursesController.DeleteCourseMember(System.Int32,System.Int32)">
+            <summary>
+            remove a member from a course  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.OrdersController.CreateOrder(Learnova.Business.DTOs.Contract.Orders.CreateOrderRequest,System.Threading.CancellationToken)">
+            <summary>
+            Create a new order with pending status
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.OrdersController.GetOrder(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Get order by ID with all course details
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.OrdersController.GetMyOrders(System.Threading.CancellationToken)">
+            <summary>
+            Get all orders for the current user
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.OrdersController.GetAllOrders(System.Threading.CancellationToken)">
+            <summary>
+            Get all orders (Admin only)
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.OrdersController.UpdateOrderStatus(System.Int32,Learnova.Business.DTOs.Contract.Orders.UpdateOrderStatusRequest,System.Threading.CancellationToken)">
+            <summary>
+            Update order payment status
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.OrdersController.CancelOrder(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Cancel an order (only if not completed)
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.OrdersController.GetOrderStatistics(System.Threading.CancellationToken)">
+            <summary>
+            Get order statistics (Admin only)
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.PaymentsController.CreatePaymentIntent(Learnova.Business.DTOs.PaymentDTO.CreatePaymentIntentRequest)">
+            <summary>
+            Creates a payment intent for processing payment
+            </summary>
+            <param name="request">Payment intent creation request</param>
+            <returns>Payment intent response with client secret</returns>
+        </member>
+        <member name="M:Learnova.API.Controllers.PaymentsController.StripeWebhook">
+            <summary>
+            Handles Stripe webhooks for payment status updates
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.PaymentsController.HandlePaymentSucceeded(Stripe.PaymentIntent)">
+            <summary>
+            Handles successful payment events
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.PaymentsController.HandlePaymentCanceled(Stripe.PaymentIntent)">
+            <summary>
+            Handles canceled payment events
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.PaymentsController.HandlePaymentFailed(Stripe.PaymentIntent)">
+            <summary>
+            Handles failed payment events
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.PdfProcessingController.ProcessPdf(System.Guid,Learnova.Business.DTOs.PdfProcessingDTO.PdfProcessingOptions)">
+            <summary>
+            Process a PDF document by its content ID.  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.PdfProcessingController.DeletePdfChunks(System.Guid)">
+            <summary>
+            Delete all chunks associated with a specific PDF content ID.  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.PdfProcessingController.GetProcessingSummary(System.Guid)">
+            <summary>
+            Get a summary of the processing status for a specific PDF content ID.  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ReviewsController.GetReviews(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            get all reviews for a product with pagination
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ReviewsController.GetReview(System.Int32,System.Int32)">
+            <summary>
+            get a specific review by id for a product
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ReviewsController.CreateReview(System.Int32,Learnova.Business.DTOs.Contract.Reviews.CreateReviewDto)">
+            <summary>
+            create a new review for a product
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ReviewsController.UpdateReview(System.Int32,System.Int32,Learnova.Business.DTOs.Contract.Reviews.UpdateReviewDto)">
+            <summary>
+            update an existing review for a product
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.ReviewsController.DeleteReview(System.Int32,System.Int32)">
+            <summary>
+            delete a review for a product
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.RolesController.GetAll(System.Boolean,System.Threading.CancellationToken)">
+            <summary>
+            Get all roles
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.RolesController.Get(System.String)">
+            <summary>
+            Get a specific role by id
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.RolesController.Add(Learnova.Business.DTOs.Contract.Roles.RoleRequest)">
+            <summary>
+            Create a new role
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.RolesController.Update(System.String,Learnova.Business.DTOs.Contract.Roles.RoleRequest)">
+            <summary>
+            Update a specific role by id
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.RolesController.ToggleStatus(System.String)">
+            <summary>
+            Toggle status of a specific role by id
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.RolesController.GetAllPermissions">
+            <summary>
+            Get all available permissions
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.UsersController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            get all users  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.UsersController.Get(System.String)">
+            <summary>
+            get a specific user by id  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.UsersController.Add(Learnova.Business.DTOs.Contract.Users.CreateUserRequest,System.Threading.CancellationToken)">
+            <summary>
+            create a new user  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.UsersController.Update(System.String,Learnova.Business.DTOs.Contract.Users.UpdateUserRequest,System.Threading.CancellationToken)">
+            <summary>
+            update a user by id  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.UsersController.ToggleStatus(System.String)">
+            <summary>
+            toggle user status (inactive) by id  
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Controllers.UsersController.Unlock(System.String)">
+            <summary>
+            unlock user account by id  
+            </summary>
+        </member>
+        <member name="T:Learnova.API.Program">
+            <summary>
+            The main entry point for the Learnova API application.
+            </summary>
+        </member>
+        <member name="M:Learnova.API.Program.Main(System.String[])">
+            <summary>
+            The main entry point method for the application.
+            </summary>
+            <param name="args">Command-line arguments passed to the application.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+    </members>
+</doc>

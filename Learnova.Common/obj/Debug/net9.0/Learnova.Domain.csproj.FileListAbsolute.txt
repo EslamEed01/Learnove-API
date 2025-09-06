@@ -1,0 +1,15 @@
+E:\Hub\Learnova.API\Learnova.Common\bin\Debug\net9.0\Learnova.Domain.deps.json
+E:\Hub\Learnova.API\Learnova.Common\bin\Debug\net9.0\Learnova.Domain.runtimeconfig.json
+E:\Hub\Learnova.API\Learnova.Common\bin\Debug\net9.0\Learnova.Domain.dll
+E:\Hub\Learnova.API\Learnova.Common\bin\Debug\net9.0\Learnova.Domain.pdb
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.csproj.AssemblyReference.cache
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.AssemblyInfoInputs.cache
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.AssemblyInfo.cs
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.csproj.CoreCompileInputs.cache
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.sourcelink.json
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.dll
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\refint\Learnova.Domain.dll
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.pdb
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\Learnova.Domain.genruntimeconfig.cache
+E:\Hub\Learnova.API\Learnova.Common\obj\Debug\net9.0\ref\Learnova.Domain.dll

@@ -1,0 +1,6 @@
+@Learnova.API_HostAddress = http://localhost:5020
+
+GET {{Learnova.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
